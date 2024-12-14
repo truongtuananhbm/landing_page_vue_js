@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Dashboard />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Dashboard from './components/Dashboard.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Dashboard, // Đăng ký component Dashboard
+  },
+};
 </script>
 
 <style>
+/* Style tổng quát cho ứng dụng */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left; /* Chỉnh lại text-align để phù hợp với giao diện */
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Đặt màu nền chung */
 }
 </style>
